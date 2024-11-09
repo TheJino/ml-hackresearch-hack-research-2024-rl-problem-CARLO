@@ -20,12 +20,12 @@ class DQN(nn.Module):
         return self.network(x)
 
 class DQLAgent:
-    def __init__(self, state_size, action_size):
+    def __init__(self, state_size, action_size, epsilon=1.0):
         self.state_size = state_size
         self.action_size = action_size
         self.memory = deque(maxlen=10000)
         self.gamma = 0.95    # discount rate
-        self.epsilon = 1.0   # exploration rate
+        self.epsilon = epsilon   # exploration rate
         self.epsilon_min = 0.01
         self.epsilon_decay = 0.995
         self.learning_rate = 0.001
