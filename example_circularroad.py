@@ -5,7 +5,7 @@ from agents import Car, RingBuilding, CircleBuilding, Painting, Pedestrian
 from geometry import Point
 import time
 from tkinter import *
-from dql_agent import DQLAgent
+from example_dql_agent import DQLAgent
 import argparse
 import os
 import glob
