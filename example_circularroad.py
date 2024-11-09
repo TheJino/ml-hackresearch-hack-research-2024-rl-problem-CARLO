@@ -197,7 +197,6 @@ if __name__ == "__main__":
             print(f"Error: {e}")
             sys.exit(1)
     else:
-        agent = DQLAgent(state_size, action_size, epsilon=1.0)
         # Training settings
         EPISODES = 10000
         batch_size = 32
@@ -205,7 +204,7 @@ if __name__ == "__main__":
         # Initialize DQL agent
         state_size = 4  # distance_to_center, velocity, heading_diff, heading
         action_size = 15  # 5 steering actions * 3 throttle actions
-        agent = DQLAgent(state_size, action_size)
+        agent = DQLAgent(state_size, action_size, epsilon=1.0)
         
         for episode in range(EPISODES):
             # Reset the environment
