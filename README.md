@@ -18,10 +18,6 @@ pip install -r requirements.txt
 ## Running
 Simply run
 ```python
-	python example_intersection.py
-```
-or
-```python
 	python example_circularroad.py
 ```
 for simple demos. The former has an example of how to use Steering Wheel controller (only Logitech G29), and the latter shows how to use Keyboard controller. You can also have a look at these files to understand how to customize your own environment. It is very straightforward.
