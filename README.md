@@ -10,6 +10,11 @@ You need to have the following libraries with [Python3](http://www.python.org/do
 - [TkInter](http://wiki.python.org/moin/TkInter)
 - [pygame](https://www.pygame.org/) (required only for Steering Wheel controller)
 
+Install dependencies
+```sh
+pip install -r requirements.txt
+```
+
 ## Running
 Simply run
 ```python
